@@ -1,0 +1,29 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+RewriteRule    ^datapasien/?$    datapasien.php    [NC,L]    # Handle pemanggilan halaman datapasien
+RewriteRule    ^datapasien1/?$    datapasien1.php    [NC,L]    # Handle pemanggilan halaman datapasien1 (sesudah di tekan button kirim)
+RewriteRule    ^register/?$    register.html    [NC,L]    # Handle pemanggilan halaman register
+RewriteRule    ^index/?$    index.html    [NC,L]    # Handle pemanggilan index (halaman utama)
+RewriteRule    ^Home-pasien/?$      Home-pasien.html  [NC,L]    # Handle pemanggilan halaman home pasien
+RewriteRule    ^Home-pasien2/?$      Home-pasien2.html  [NC,L]    # Handle pemanggilan halaman home pasien 2 (home sesudah di setujui oleh dokter untuk melihat rekam medik)
+RewriteRule    ^Home-dokter/?$      Home-dokter.html  [NC,L]    # Handle pemanggilan halaman home dokter
+RewriteRule    ^Home-dokter2/?$      Home-dokter2.html  [NC,L]    # Handle pemanggilan halaman home dokter 2 (sesudah di tekan button kirim)
+RewriteRule    ^Jadwal/?$    Jadwal.html    [NC,L]    # Handle pemanggilan halaman jadwal sebelum login
+RewriteRule    ^Jadwal3/?$    Jadwal3.html    [NC,L]    # Handle pemanggilan halaman jadwal setelah pasien login
+RewriteRule    ^Jadwal2/?$    Jadwal2.html    [NC,L]    # Handle pemanggilan halaman jadwal setelah perawat login
+RewriteRule    ^Jadwal4/?$    Jadwal4.html    [NC,L]    # Handle pemanggilan halaman jadwal setelah dokter login
+RewriteRule    ^lihat/?$    lihat.html    [NC,L]    # Handle pemanggilan halaman rekam medik untuk pasien
+RewriteRule    ^lihat2/?$    lihat2.html    [NC,L]    # Handle pemanggilan halaman rekam medik untuk dokter
+RewriteRule    ^profil/?$   Profil.php    [NC,L]    # Handle pemanggilan halaman profil sebelum login
+RewriteRule    ^profil2/?$   Profil2.php    [NC,L]    # Handle pemanggilan halaman profil setelah perawat login
+RewriteRule    ^profil3/?$   Profil3.php    [NC,L]    # Handle pemanggilan halaman profil setelah pasien login
+RewriteRule    ^profil4/?$   Profil4.php    [NC,L]    # Handle pemanggilan halaman profil setelah dokter login
+RewriteRule    ^login/?$    login.html    [NC,L]    # Handle pemanggilan halaman login
+RewriteRule    ^qr/?$    qr.html   [NC,L]    # Handle pemanggilan halaman QR-Code untuk pasien 
+RewriteRule    ^jadwalberobat/?$   jadwalberobat.html    [NC,L]    # Handle pemanggilan halaman jadwal berobat pasien  
+RewriteRule    ^contact/?$   contact.html    [NC,L]    # Handle pemanggilan halaman contact sebelum login
+RewriteRule    ^contact2/?$   contact2.html    [NC,L]    # Handle pemanggilan halaman contact setelah perawat login
+RewriteRule    ^contact3/?$    contact3.html    [NC,L]    # Handle pemanggilan halaman contact3 setelah pasien login
+RewriteRule    ^contact4/?$   contact4.html    [NC,L]    # Handle pemanggilan halaman contact setelah dokter login  
+RewriteRule    ^persetujuan/?$   persetujuan.html    [NC,L]    # Handle pemanggilan halaman persetujuan untuk melihat rekam medik
+RewriteRule    ^lanjut/?$   lanjut.html    [NC,L]    # Handle pemanggilan halaman lanjut untuk menampilkan pemberitahuan menunggu persetujuan dokter
