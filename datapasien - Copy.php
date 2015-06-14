@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<title>DataPasien</title>
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta charset="utf-8">
         <script type="text/javascript"></script>      
                 <link rel="stylesheet" href="css/bootstrap.css" >
                 <link rel="stylesheet" href="css/style1.css." >
@@ -28,12 +28,16 @@
                 <!-- menu untuk toggle -->
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="nav navbar-nav">
-							<li><a href="Profil2">Profil</a></li>
-							<li><a href="Jadwal2">Jadwal</a></li>
-							<li><a href="contact2" >Contact</a></li>
-							<li><a href="datapasien" >Tabel Pasien</a></li>
+							<li><a href="Profil.php">Profil</a></li>
+							<li><a href="Jadwal">Jadwal</a></li>
+							<li><a href="contact" >Contact</a></li>
+							<li><a href="datapasien.php" >Tabel Pasien</a></li>
+                            <li><a href="logout" >Logout</a></li>
                     </ul>
-                  	<a href="index" class="navbar-btn btn-danger btn pull-right"><span class="glyphicon glyphicon-log-out"></span>&nbsp&nbsp&nbspLogout</a>
+                    <form class="navbar-form navbar-right">                      
+                      <a href="Notifikasi" >Notifikasi</a>                      
+                    </form>
+                
                 </div> <!-- end collapse -->
             </div> <!-- end container -->
         </nav> <!-- end of navigation -->     
@@ -41,7 +45,7 @@
 <div id="closed"></div> 
 <div class="popup-wrapper" id="popup">
 <div class="popup-container">
-    <form action="datapasien1" method="post" class="popup-form">
+    <form action="datapasien1.php" method="post" class="popup-form">
     <P align="center">Pemberitahuan</P>
     <p>Nama :Reno Raditya.</p>
     <p>No.MR :35</p>
@@ -52,30 +56,48 @@
 </div>  
         
         
-        <br><br><br><br><br><br>
-        
-      <div class="col-md-6 col-md-offset-3 padding">
-		<table class="table table-bordered table-hover"><br><br>
-	    	<thead>
+        <br><br><br><br>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text">
+            <div class="well">
+            <h3 >Data Pasien</h3>
+                
+<style>
+    tbody > tr:nth-child(2n+1) > td, tbody > tr:nth-child(2n) > th {
+    }
+    tbody > tr:nth-child(2n) > td, tbody > tr:nth-child(2n) > th {
+    }
+    table{
+        width: 100%;
+        margin: auto;
+        border-collapse: collapse;
+        box-shadow: darkgrey 3px;
+    }
+    thead tr {
+        background-color: #166283;
+    }
+</style>
+   
+<h4>
+    <table border='2' >
         <tr>
             <th>No.</th>
             <th>Nama</th>
             <th>No. MR</th>
             <th>Keterangan</th>
-			<th>Tanggal Berobat</th>
-            <th>Jam Berobat</th>
+            <th>Waktu</th>
             <th>Action</th>
         </tr>
-       </thead>
-    	<tbody>
+        </h4>
+    
         <tr>
             <td>1</td>
             <td>Alyysa Citra</td>
             <td>27</td>
             <td>Selesai</td>
-			<td>20-05-2015</td>
-            <td>17.10</td>
-            <td><a href="#" class="btn btn-primary sm"><span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbspKirim</a></td>
+            <td>17.45</td>
+            <td><a href="#">Kirim</a>            
         </tr>
         
         <tr>
@@ -83,9 +105,8 @@
             <td>Nada Octavira</td>
             <td>10</td>
             <td>Selesai</td>
-			<td>20-05-2015</td>
             <td>18.00</td>
-            <td><a href="#" class="btn btn-primary sm"><span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbspKirim</a></td>
+            <td><a href="#">Kirim</a>            
         </tr>
 
         <tr>
@@ -93,23 +114,12 @@
             <td>Reno Raditya</td>
             <td>35</td>
             <td>Datang</td>
-			<td>20-05-2015</td>
-            <td>18.40</td>
-           <td><a href="#popup" class="btn btn-primary sm"><span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbspKirim</a></td>
+            <td>18.30</td>
+           <td><a href="#popup">Kirim</a>          
         </tr>
-			</tbody>
-		</table> 
         </div>
-        
         </div>
-        </div> 
-	<div class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <p class="navbar-text pull-left">Al-Fatih</p>
-            </div>  
         </div>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>   
+        </div>         
     </body>
 </html>
