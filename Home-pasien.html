@@ -1,21 +1,31 @@
 <html lang="en">
-    <head>
-<<<<<<< HEAD
-        <title>Halaman QR</title>
-=======
-        <title>Home</title>
->>>>>>> origin/master
+	<head>
+		<title>Home</title>
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <script type="text/javascript"></script>      
-        <link rel="stylesheet" href="css/bootstrap.css" >
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/style1.css." >
         <style>
             .padding {
                 padding-top: 70px;
             }
         </style> 
 
-    </head>
-    <body>
+	</head>
+	<body>
+        
+<div id="closed"></div> 
+<div class="popup-wrapper" id="popup">
+<div class="popup-container">
+    <form action="jadwalberobat.html" method="post" class="popup-form">
+    <P align="center">Pemberitahuan</P>
+    <p>Apakah Anda Ingin Berobat Hari Ini?</p>
+    <input type="submit" value="Ya" > 
+    </form>
+    <a class="popup-close" href="#closed">X</a>
+</div>
+</div> 
+        
         
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -28,7 +38,7 @@
                         <span class="icon-bar"></span>
                     </button> <!-- end button -->
 
-                    <a href="index.html" class="navbar-brand">
+                    <a href="#" class="navbar-brand">
                         <strong><span style="color: green;">AL</span> <span style="color: #26c8ce;">FATIH</span></strong>
                     </a> <!-- end brand -->
                 </div> <!-- end header -->
@@ -36,62 +46,39 @@
                 <!-- menu untuk toggle -->
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav">
-<<<<<<< HEAD
-                            <li><a href="Profil3">Profil</a></li>
+							<li><a href="Profil3">Profil</a></li>
                             <li><a href="Jadwal3">Jadwal</a></li>
 							<li><a href="contact3" >Contact</a></li>
 							<li><a href="Home-pasien">Beranda</a></li>
                     </ul>
 					<a href="index" class="navbar-btn btn-danger btn pull-right"><span class="glyphicon glyphicon-log-out"></span>&nbsp&nbsp&nbspLogout</a>
-=======
-                            <li><a href="Profil">Profil</a></li>
-                            <li><a href="Jadwal">Jadwal</a></li>
-                            <li><a href="Contact" >Contact</a></li>
-                    </ul>
->>>>>>> origin/master
                </div> <!-- end collapse -->
-                
+				
             </div> <!-- end container -->
         </div> <!-- end of navigation -->  
-<<<<<<< HEAD
-   <br>
-        <br>
-=======
 
->>>>>>> origin/master
         <br>
         <br>
         <br>
         <br>
         <br>
-<<<<<<< HEAD
-		<br>
-=======
->>>>>>> origin/master
         <br>
-        <div class="container">
+        <br>
+        <br>
+        <div class="container padding">
             <div class="col-md-6 col-md-offset-3">
-                <div  align="center">
-                    <img src="qr.png" alt="Bahama" width="260" height="235">
-                    <br>
-                    <h2>72</h2>
-                    
-                </div>    
-            </div>
-            <br>
-            <br>
-<<<<<<< HEAD
-=======
-            <div class="col-md-6 col-md-offset-3">
-
                 <div class="well" align="center">
-                <a href="index.html" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span> Home</a>
-                    
-                <a href="logout.html" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon glyphicon-log-out"></span> Keluar</a>
+                    <a href="#popup" class="btn btn-primary btn-lg">&nbspBerobat&nbsp</a>
+                    <br>
+                    <br>
+                    <a href="qr" class="btn btn-primary btn-lg">&nbspLihat&nbspQR&nbspCode&nbsp</a>
+					 <br>
+                    <br>
+					       <a href="persetujuan" class="btn btn-primary btn-lg">&nbspLihat&nbspRekam&nbspMedik&nbsp</a>
+                    <br>
                 </div>    
             </div>
->>>>>>> origin/master
-        </div> 
+        </div>  
 
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
