@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<title>Profil</title>
-      <meta name="viewport" content="width=device-width, intial-scale=1.0">
+       <meta charset="utf-8">
         <script type="text/javascript"></script>      
                 <link rel="stylesheet" href="css/bootstrap.css" >
 
@@ -14,11 +14,11 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 			   $('#map_canvas').googleMaps({
-				   latitude: 	5.5575373,
-						longitude:  95.3259311,
+				   latitude: 	5.568379,
+						longitude:  95.367483,
 						markers: {
-                                latitude: 	5.5575373,
-						longitude:  95.3259311,
+                                latitude: 	5.568379,
+						        longitude:  95.367483,
 			             }
 			   });
 			});
@@ -47,12 +47,14 @@
                 <!-- menu untuk toggle -->
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="nav navbar-nav">
-							<li><a href="Profil">Profil</a></li>
+							<li><a href="Profil.php">Profil</a></li>
 							<li><a href="Jadwal">Jadwal</a></li>
 							<li><a href="contact" >Contact</a></li>
 							
                     </ul>
-                    <a href="index" class="navbar-btn btn-danger btn pull-right"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbsp&nbspLogin</a>
+                    <form class="navbar-form navbar-right">                      
+                      <a href="Notifikasi" >Notifikasi</a>                      
+                    </form>
                 
                 </div> <!-- end collapse -->
             </div> <!-- end container -->
@@ -101,7 +103,5 @@
           </div>
         </div>
     </div>
-			 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script> 
     </body>
 </html>
