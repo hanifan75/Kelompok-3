@@ -1,0 +1,88 @@
+<html lang="en">
+	<head>
+		<title>Register</title>
+       
+        <script type="text/javascript"></script>      
+                <link rel="stylesheet" href="css/bootstrap.css" >
+
+
+	</head>
+	<body>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <!-- Tampilkan brand dan toggle jika mobile view -->
+                <div class="navbar-header">
+                      <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> <!-- end button -->
+
+                    <a href="#" class="navbar-brand">
+                        <strong><span style="color: green;">AL</span> <span style="color: #26c8ce;">FATIH</span></strong>
+                    </a> <!-- end brand -->
+                </div> <!-- end header -->
+
+                <!-- menu untuk toggle -->
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav">
+							<li><a href="Profil">Profil</a></li>
+							<li><a href="Jadwal">Jadwal</a></li>
+							<li><a href="contact" >Contact</a></li>
+                    </ul>
+               </div> <!-- end collapse -->
+				  </div> <!-- end container -->
+        </nav> <!-- end of navigation -->  
+			
+						<br> <br><br> <br> 
+	
+		<div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text">
+                    <div class="well">
+                        <form action="Home-pasien" method="post" name="login">
+                            <h1 class="login-title" >Sign Up</h1>
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" placeholder="Nama Lengkap">
+                            </div>
+									<p>
+									Jenis Kelamin<br />
+									<input type="radio" name="jenis_kelamin" value="Laki-Laki" id="laki-laki" /><label for="laki-laki">Laki-Laki</label>
+									<input type="radio" name="jenis_kelamin" value="Perempuan" id="perempuan" /><label for="perempuan">Perempuan</label>
+								</p>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Tempat Lahir" name="tempatlahir" cols="50" required></textarea>
+                            </div>
+							 <div class="form-group">
+                                <input type="date" class="form-control" placeholder="Tanggal lahir" name="tanggallahir" cols="50" required></textarea>
+                            </div>
+							 <div class="form-group">
+                                <textarea class="form-control" placeholder="Alamat" name="alamat" cols="50" required></textarea>
+                            </div>
+							<div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                            </div>
+							<div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+							<div class="form-group">
+                                <input type="password" class="form-control" name="re-password" placeholder="Re-Password">
+                            </div>
+							<div class="form-group">
+                                <input class="form-control" placeholder="No Hp" type="text" name="no_hp" required />
+                            </div>
+						</div>
+                            <!-- <td><input type="submit" name="submit" value="Login" onclick="return(submitlogin());"></td> -->
+                            <button type="submit" class="btn btn-primary" name="submit" value="submit" >Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<br> <br>
+    </body>
+</html>
